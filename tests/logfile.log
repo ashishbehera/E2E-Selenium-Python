@@ -1,0 +1,36 @@
+2022-11-07 21:59:05,441 :INFO :test_e2e :Getting all the card titles
+2022-11-07 21:59:05,795 :INFO :test_e2e :Entering Country Name
+2022-11-07 21:59:11,182 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-07 21:59:57,013 :INFO :test_e2e :Getting all the card titles
+2022-11-07 21:59:57,361 :INFO :test_e2e :Entering Country Name
+2022-11-07 22:00:02,711 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-09 21:41:41,420 :INFO :test_e2e :Getting all the card titles
+2022-11-09 21:41:41,640 :INFO :test_e2e :Entering Country Name
+2022-11-09 21:41:46,883 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-09 21:41:51,642 :INFO :test_home_page :First Name is: Test User1
+2022-11-09 21:41:52,267 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:41:52,267 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:43:29,098 :INFO :test_e2e :Getting all the card titles
+2022-11-09 21:43:29,402 :INFO :test_e2e :Entering Country Name
+2022-11-09 21:43:34,720 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-09 21:43:39,130 :INFO :test_home_page :First Name is: Test User1
+2022-11-09 21:43:39,763 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:43:39,763 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:57:09,619 :INFO :test_e2e :Getting all the card titles
+2022-11-09 21:57:09,941 :INFO :test_e2e :Entering Country Name
+2022-11-09 21:57:15,282 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-09 21:57:19,774 :INFO :test_home_page :First Name is: Test User1
+2022-11-09 21:57:20,387 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:57:20,387 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:58:55,091 :INFO :test_e2e :Getting all the card titles
+2022-11-09 21:58:55,394 :INFO :test_e2e :Entering Country Name
+2022-11-09 21:59:00,717 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-09 21:59:05,228 :INFO :test_home_page :First Name is: Test User1
+2022-11-09 21:59:06,161 :INFO :test_home_page :First Name is: Test User2
+2022-11-09 21:59:06,161 :INFO :test_home_page :First Name is: Test User2
