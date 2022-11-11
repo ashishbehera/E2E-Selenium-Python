@@ -41,8 +41,10 @@ def setup(request):
 
 @pytest.hookimpl(tryfirst=True)
 def pytest_configure(config):
+    current_dir = os.getcwd()
+    parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
     config.option.htmlpath = (
-            "reports/" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"
+            parent_dir+"/reports/" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"
     )
 
 
@@ -56,6 +58,7 @@ def pytest_runtest_makereport(item):
     outcome = yield
     report = outcome.get_result()
     extra = getattr(report, 'extra', [])
+
     # # current directory
     # current_dir = os.getcwd()
     # print("Present Directory", current_dir)
@@ -64,8 +67,10 @@ def pytest_runtest_makereport(item):
 
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
+        # current_dir = os.getcwd()
+        # parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
         if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = "reports/" + report.nodeid.replace("::", "_") + ".png"
+            file_name = report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
             if file_name:
                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
