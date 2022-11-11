@@ -1,4 +1,4 @@
-#!/Users/ashbeher/Desktop/Personal/Automation/E2ESeleniumPython/bin/python
+#!/Users/ashbeher/Desktop/Personal/Automation/E2E-Selenium-Python/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

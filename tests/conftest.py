@@ -1,6 +1,9 @@
+from datetime import datetime
+
 import pytest as pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
+
 driver = None
 
 
@@ -32,6 +35,14 @@ def setup(request):
     yield
     driver.close()
 
+
+@pytest.hookimpl(tryfirst=True)
+def pytest_configure(config):
+    config.option.htmlpath = (
+            "reports/" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"
+    )
+
+
 @pytest.mark.hookwrapper
 def pytest_runtest_makereport(item):
     """
@@ -42,11 +53,16 @@ def pytest_runtest_makereport(item):
     outcome = yield
     report = outcome.get_result()
     extra = getattr(report, 'extra', [])
+    # # current directory
+    # current_dir = os.getcwd()
+    # print("Present Directory", current_dir)
+    # # parent directory
+    # print(os.path.abspath(os.path.join(current_dir, os.pardir)))
 
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
         if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = report.nodeid.replace("::", "_") + ".png"
+            file_name = "reports/" + report.nodeid.replace("::", "_") + ".png"
             _capture_screenshot(file_name)
             if file_name:
                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
@@ -56,4 +72,4 @@ def pytest_runtest_makereport(item):
 
 
 def _capture_screenshot(name):
-        driver.get_screenshot_as_file(name)
+    driver.get_screenshot_as_file(name)

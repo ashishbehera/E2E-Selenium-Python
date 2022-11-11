@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 09-Nov-2022 at 21:59:07 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 10-Nov-2022 at 20:33:06 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -272,7 +272,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.11.0</td></tr></table>
     <h2>Summary</h2>
-    <p>3 tests ran in 17.75 seconds. </p>
+    <p>3 tests ran in 18.38 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">1 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -288,28 +288,28 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test_home_page.py::TestHomePage::test_home_page[getData0]</td>
-          <td class="col-duration">4.66</td>
+          <td class="col-duration">4.56</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="test_home_page.py_TestHomePage_test_home_page[getData0].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;tests.test_home_page.TestHomePage object at 0x1098b9e50&gt;, getData = {&#x27;email&#x27;: &#x27;test.user1@gmail.com&#x27;, &#x27;firstname&#x27;: &#x27;Test User1&#x27;, &#x27;gender&#x27;: &#x27;Male&#x27;}<br/><br/>    def test_home_page(self, getData):<br/>        log = self.getLogger()<br/>        home_page = HomePage(self.driver)<br/>        home_page.enterName().send_keys(getData[&quot;firstname&quot;])<br/>        log.info(&quot;First Name is: &quot;+getData[&quot;firstname&quot;])<br/>        home_page.enterEmail().send_keys(getData[&quot;email&quot;])<br/>        home_page.clickChkBox().click()<br/>        self.selectByVisibleText(home_page.select_Gender(), getData[&quot;gender&quot;])<br/>        home_page.btn_Submit().click()<br/>        msg_sucess = home_page.msg_Success().text<br/>&gt;       assert &quot;Success!423423&quot; in msg_sucess<br/><span class="error">E       AssertionError: assert &#x27;Success!423423&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>test_home_page.py:19: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>I am in chome
+            <div class="log">self = &lt;tests.test_home_page.TestHomePage object at 0x10ab2c910&gt;, getData = {&#x27;email&#x27;: &#x27;test.user1@gmail.com&#x27;, &#x27;firstname&#x27;: &#x27;Test User1&#x27;, &#x27;gender&#x27;: &#x27;Male&#x27;}<br/><br/>    def test_home_page(self, getData):<br/>        log = self.getLogger()<br/>        home_page = HomePage(self.driver)<br/>        home_page.enterName().send_keys(getData[&quot;firstname&quot;])<br/>        log.info(&quot;First Name is: &quot;+getData[&quot;firstname&quot;])<br/>        home_page.enterEmail().send_keys(getData[&quot;email&quot;])<br/>        home_page.clickChkBox().click()<br/>        self.selectByVisibleText(home_page.select_Gender(), getData[&quot;gender&quot;])<br/>        home_page.btn_Submit().click()<br/>        msg_sucess = home_page.msg_Success().text<br/>&gt;       assert &quot;Success!423423&quot; in msg_sucess<br/><span class="error">E       AssertionError: assert &#x27;Success!423423&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>../../E2ESeleniumPython/tests/test_home_page.py:19: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>I am in chome
 <br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_home_page:test_home_page.py:13 First Name is: Test User1<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">test_home_page.py::TestHomePage::test_home_page[getData1]</td>
-          <td class="col-duration">0.60</td>
+          <td class="col-duration">0.59</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div><div><img src="test_home_page.py_TestHomePage_test_home_page[getData1].png" alt="screenshot" style="width:304px;height:228px;" onclick="window.open(this.src)" align="right"/></div></div>
-            <div class="log">self = &lt;tests.test_home_page.TestHomePage object at 0x1098b9e10&gt;, getData = {&#x27;email&#x27;: &#x27;test.user2@gmail.com&#x27;, &#x27;firstname&#x27;: &#x27;Test User2&#x27;, &#x27;gender&#x27;: &#x27;Female&#x27;}<br/><br/>    def test_home_page(self, getData):<br/>        log = self.getLogger()<br/>        home_page = HomePage(self.driver)<br/>        home_page.enterName().send_keys(getData[&quot;firstname&quot;])<br/>        log.info(&quot;First Name is: &quot;+getData[&quot;firstname&quot;])<br/>        home_page.enterEmail().send_keys(getData[&quot;email&quot;])<br/>        home_page.clickChkBox().click()<br/>        self.selectByVisibleText(home_page.select_Gender(), getData[&quot;gender&quot;])<br/>        home_page.btn_Submit().click()<br/>        msg_sucess = home_page.msg_Success().text<br/>&gt;       assert &quot;Success!423423&quot; in msg_sucess<br/><span class="error">E       AssertionError: assert &#x27;Success!423423&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>test_home_page.py:19: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_home_page:test_home_page.py:13 First Name is: Test User2<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;tests.test_home_page.TestHomePage object at 0x10afd78d0&gt;, getData = {&#x27;email&#x27;: &#x27;test.user2@gmail.com&#x27;, &#x27;firstname&#x27;: &#x27;Test User2&#x27;, &#x27;gender&#x27;: &#x27;Female&#x27;}<br/><br/>    def test_home_page(self, getData):<br/>        log = self.getLogger()<br/>        home_page = HomePage(self.driver)<br/>        home_page.enterName().send_keys(getData[&quot;firstname&quot;])<br/>        log.info(&quot;First Name is: &quot;+getData[&quot;firstname&quot;])<br/>        home_page.enterEmail().send_keys(getData[&quot;email&quot;])<br/>        home_page.clickChkBox().click()<br/>        self.selectByVisibleText(home_page.select_Gender(), getData[&quot;gender&quot;])<br/>        home_page.btn_Submit().click()<br/>        msg_sucess = home_page.msg_Success().text<br/>&gt;       assert &quot;Success!423423&quot; in msg_sucess<br/><span class="error">E       AssertionError: assert &#x27;Success!423423&#x27; in &#x27;×\nSuccess! The Form has been submitted successfully!.&#x27;</span><br/><br/>../../E2ESeleniumPython/tests/test_home_page.py:19: AssertionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     test_home_page:test_home_page.py:13 First Name is: Test User2<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_e2e.py::TestE2E::test_e2e</td>
-          <td class="col-duration">11.36</td>
+          <td class="col-duration">11.76</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
