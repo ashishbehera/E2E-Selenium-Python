@@ -1,0 +1,8 @@
+[
+  "test_e2e.py::TestE2E::test_e2e",
+  "test_e2e_login.py::TestE2ELogin::test_e2e_login",
+  "test_e2e_login.py::TestE2ELogin::test_e2e_login[getData0]",
+  "test_e2e_login.py::TestE2ELogin::test_e2e_login[getData1]",
+  "test_home_page.py::TestHomePage::test_home_page[getData0]",
+  "test_home_page.py::TestHomePage::test_home_page[getData1]"
+]

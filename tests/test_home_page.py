@@ -16,7 +16,7 @@ class TestHomePage(BaseClass):
         self.selectByVisibleText(home_page.select_Gender(), getData["gender"])
         home_page.btn_Submit().click()
         msg_sucess = home_page.msg_Success().text
-        assert "Success!423423" in msg_sucess
+        assert "Success!" in msg_sucess
         self.driver.refresh()
 
     # @pytest.fixture(params=[("Test User1", "test.user1@gmail.com", "Male"), ("Test User2", "test.user2@gmail.com", "Female")])

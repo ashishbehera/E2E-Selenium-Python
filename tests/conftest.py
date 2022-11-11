@@ -22,13 +22,13 @@ def setup(request):
     parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
 
     if browser_name == 'chrome':
-        service_obj = Service(parent_dir+"//drivers//chromedriver");
+        service_obj = Service(parent_dir + "//drivers//chromedriver");
         driver = webdriver.Chrome(service=service_obj)
     elif browser_name == 'firefox':
-        service_obj = Service(parent_dir+"//drivers//geckodriver");
+        service_obj = Service(parent_dir + "//drivers//geckodriver");
         driver = webdriver.Firefox(service=service_obj)
     elif browser_name == 'edge':
-        service_obj = Service(parent_dir+"//drivers//msedgedriver");
+        service_obj = Service(parent_dir + "//drivers//msedgedriver");
         driver = webdriver.Edge(service=service_obj)
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")
@@ -44,7 +44,7 @@ def pytest_configure(config):
     current_dir = os.getcwd()
     parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
     config.option.htmlpath = (
-            parent_dir+"/reports/" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"
+            parent_dir + "/reports/" + datetime.now().strftime("%d-%m-%Y %H-%M-%S") + ".html"
     )
 
 
@@ -67,10 +67,10 @@ def pytest_runtest_makereport(item):
 
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
-        # current_dir = os.getcwd()
-        # parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
+        current_dir = os.getcwd()
+        parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
         if (report.skipped and xfail) or (report.failed and not xfail):
-            file_name = report.nodeid.replace("::", "_") + ".png"
+            file_name = parent_dir + "/reports/" + report.nodeid.replace("::", "_")  + ".png"
             _capture_screenshot(file_name)
             if file_name:
                 html = '<div><img src="%s" alt="screenshot" style="width:304px;height:228px;" ' \
