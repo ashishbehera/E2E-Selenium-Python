@@ -1,3 +1,4 @@
+import os
 from datetime import datetime
 
 import pytest as pytest
@@ -17,15 +18,17 @@ def pytest_addoption(parser):
 def setup(request):
     global driver
     browser_name = request.config.getoption("browser_name")
+    current_dir = os.getcwd()
+    parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
+
     if browser_name == 'chrome':
-        print("I am in chome")
-        service_obj = Service("//Users//ashbeher//Desktop//Personal//Automation//Library//chromedriver");
+        service_obj = Service(parent_dir+"//drivers//chromedriver");
         driver = webdriver.Chrome(service=service_obj)
     elif browser_name == 'firefox':
-        service_obj = Service("//Users//ashbeher//Desktop//Personal//Automation//Library//geckodriver");
+        service_obj = Service(parent_dir+"//drivers//geckodriver");
         driver = webdriver.Firefox(service=service_obj)
     elif browser_name == 'edge':
-        service_obj = Service("//Users//ashbeher//Desktop//Personal//Automation//Library//msedgedriver");
+        service_obj = Service(parent_dir+"//drivers//msedgedriver");
         driver = webdriver.Edge(service=service_obj)
 
     driver.get("https://rahulshettyacademy.com/angularpractice/")

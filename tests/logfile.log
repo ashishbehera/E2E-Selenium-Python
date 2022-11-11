@@ -135,3 +135,17 @@ Success! Thank you! Your order will be delivered in next few weeks :-).
 2022-11-11 11:27:14,713 :INFO :test_home_page :First Name is: Test User1
 2022-11-11 11:27:15,715 :INFO :test_home_page :First Name is: Test User2
 2022-11-11 11:27:15,715 :INFO :test_home_page :First Name is: Test User2
+2022-11-11 14:36:14,673 :INFO :test_e2e :Getting all the card titles
+2022-11-11 14:36:14,971 :INFO :test_e2e :Entering Country Name
+2022-11-11 14:36:20,212 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-11 14:36:24,775 :INFO :test_home_page :First Name is: Test User1
+2022-11-11 14:36:25,615 :INFO :test_home_page :First Name is: Test User2
+2022-11-11 14:36:25,615 :INFO :test_home_page :First Name is: Test User2
+2022-11-11 14:44:54,912 :INFO :test_e2e :Getting all the card titles
+2022-11-11 14:44:55,272 :INFO :test_e2e :Entering Country Name
+2022-11-11 14:45:00,649 :INFO :test_e2e :Text messagw from application: ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
+2022-11-11 14:45:05,504 :INFO :test_home_page :First Name is: Test User1
+2022-11-11 14:45:06,380 :INFO :test_home_page :First Name is: Test User2
+2022-11-11 14:45:06,380 :INFO :test_home_page :First Name is: Test User2
